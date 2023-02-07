@@ -2,6 +2,11 @@
 /* #include "Month.h" */
 #include <iostream>
 
+void init() {
+    Date day = Date::now();
+    std::cout << day << "\n";
+}
+
 void display_today() {
     Date day = Date::now();
 
@@ -34,7 +39,8 @@ void display_today() {
 /* } */
 
 int main() {
-    display_today();
+    init();
+    /* display_today(); */
     /* display_month(); */
     /* display_whole_month(); */
 }
